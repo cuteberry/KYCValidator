@@ -1,0 +1,4 @@
+ropsten network
+contract address: 
+MiddleMan 0x7629ad9e277046b37C71E720bA0a715311827839
+ContractRegister 0x95229A030f98CA57C79d94F9089f9A09Ad927983
