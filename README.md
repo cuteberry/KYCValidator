@@ -14,9 +14,7 @@
 -  Truffle - used to build and deploy the smart contract. 
 -  web3-React - used to conect smart contract with React UI.  
 -  Chainlink - used to call off chain API. 
-
-## Test
-run `truffle test` with ganche-cli on port 8545
+-  Infuar - used to deploy ontract on chain 
 
 ## Folder structure
 ```
@@ -45,14 +43,17 @@ truffle compile
 truffle deploy --reset  --network kovan
 ```
 
-## Testing
+## Test Command
+- Local test
+    - run `truffle test` with ganche-cli on port 8545
+- live test
 ```
 cd client
 yarn
 yarn start
 ```
 
-## Testing guidance
+## Testing Instructions
 - Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
 - JobId: 7401f318127148a894c00c292e486ffd
 - targetAddress: https://github.com/cuteberry/demo/blob/master/db.json

@@ -3,9 +3,9 @@ import React, { createContext, useReducer } from 'react';
 const initialContext = {
   targetAddress: '',
   setTargetAddress: () => {},
-  oracle: '',
+  oracle: '0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8',
   setOracle: () => {},
-  jobId: '',
+  jobId: '7401f318127148a894c00c292e486ffd',
   setJobId: () => {},
   hasTargetValidated: '',
   setHasTargetValidated: () => {},

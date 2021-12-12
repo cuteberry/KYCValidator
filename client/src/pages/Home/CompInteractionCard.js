@@ -17,9 +17,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 100px;
-  -webkit-box-align: center;
-  align-items: center;
+  padding-top: 10px;
+  -webkit-box-align: right;
+  align-items: right;
   flex: 1 1 0%;
   overflow: hidden auto;
   z-index: 1;
@@ -83,14 +83,11 @@ const CompInteractionCard = () => {
         <Text block t2 color={colors.green} className="mb-3">
           KYC Validator
         </Text>
-        <OracleInput  setValue={setOracle}/>
-        <JobIdInput  setValue={setJobId}/>
-        <AddressInput  setValue={setTargetAddress}/>
+        <OracleInput value="0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8" />
+        <JobIdInput  value="7401f318127148a894c00c292e486ffd"/>
+        <AddressInput  value={targetAddress} setValue={setTargetAddress}/>
         <Button variant="outline-dark" disabled={targetAddress == ''} className="mt-3" onClick={handleHasKYC}>
           isKYC
-        </Button>
-        <Button variant="outline-dark" disabled={targetAddress == ''} className="mt-3" onClick={handleTempData}>
-          Get API Result
         </Button>
         <Button variant="outline-dark" disabled={targetAddress == ''} className="mt-3" onClick={handleRetrieveKYC}>
           Retrieve KYC OffChain

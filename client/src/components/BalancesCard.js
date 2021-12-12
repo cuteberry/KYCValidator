@@ -24,21 +24,28 @@ const BalanceCard = () => {
   // }, [account]);
 
   return (
-    <Card style={{ maxWidth: 300 }}>
-      <Text block color={colors.green}>
-        Target Address: {targetAddress} 
+    <Card style={{ maxWidth: 500}}>
+      <Text block color={colors.darkRed}>
+        System
       </Text>
       <Text block color={colors.green}>
-        Oracle: {oracle} 
+        KYC Validator Address on Kovan TestNet: <Text block color={colors.brown}>0x5d97A2DD17517379010b6f7FaC1aE7B5c963F91d</Text> 
       </Text>
       <Text block color={colors.green}>
-        JobId: {jobId} 
+        Oracle: <Text block color={colors.brown}>{oracle}</Text>
       </Text>
       <Text block color={colors.green}>
-        KYC Validated: {hasTargetValidated}
+        JobId: <Text block color={colors.brown}>{jobId}</Text>
+      </Text>
+      <br/>
+      <Text block color={colors.darkRed}>
+        User
       </Text>
       <Text block color={colors.green}>
-        API callback data: {tempData}
+        Address: <Text block color={colors.brown}>{targetAddress}</Text> 
+      </Text>
+      <Text block color={colors.green}>
+        KYC Validated: <Text block color={colors.brown}>{hasTargetValidated}</Text>
       </Text>
     </Card>
   );
