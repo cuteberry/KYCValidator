@@ -40,6 +40,7 @@ KYCValidator
 `npm install`
 
 ## Deployment
+yarn 
 npm install @chainlink/contracts
 truffle compile
 truffle deploy --reset  --network kovan
