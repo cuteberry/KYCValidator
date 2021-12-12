@@ -11,6 +11,8 @@ const BalanceCard = () => {
   const { 
     hasTargetValidated,
     targetAddress,
+    oracle,
+    jobId,
     tempData,
    } = useAppContext();
 
@@ -25,6 +27,12 @@ const BalanceCard = () => {
     <Card style={{ maxWidth: 300 }}>
       <Text block color={colors.green}>
         Target Address: {targetAddress} 
+      </Text>
+      <Text block color={colors.green}>
+        Oracle: {oracle} 
+      </Text>
+      <Text block color={colors.green}>
+        JobId: {jobId} 
       </Text>
       <Text block color={colors.green}>
         KYC Validated: {hasTargetValidated}

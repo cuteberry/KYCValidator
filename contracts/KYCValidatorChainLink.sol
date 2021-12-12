@@ -32,11 +32,7 @@ contract KYCValidatorChainlink is ChainlinkClient {
     
     event logRequestId(bytes32 queryId);
 
-    event logRetreiveKYCEnd(address addr, bytes bytesData);
-
     event logRetrieveKYCStart(address addr);
-
-    event logRetreiveKYCEnd(address addr);
 
     event logAPIResult(string result);
 

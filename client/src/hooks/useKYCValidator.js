@@ -1,6 +1,6 @@
 import { useContract } from './useContract';
 // import C_TOKEN_ABI from '../static/cEthABI';
-import KYC_VALIDATOR_ABI from '../contracts/KYCValidatorWithAPICall.json';
+import KYC_VALIDATOR_ABI from '../contracts/KYCValidatorChainlink.json';
 import useIsValidNetwork from './useIsValidNetwork';
 import { useWeb3React } from '@web3-react/core';
 import { useAppContext } from '../AppContext';
@@ -13,14 +13,24 @@ export const useKYCValidator = () => {
   const validator = account;
   const kycValidatorContractAddress = '0x9afBB0de076895917C21318307AD8B1084d77914'; // ropsten
   const kycValidatorContract = useContract(kycValidatorContractAddress, KYC_VALIDATOR_ABI.abi);
-  const { setTargetAddress, setHasTargetValidated, targetAddress, isTargetValidated, setTxnStatus, setTempData, tempData } = useAppContext();
+  const { setTargetAddress, 
+    setHasTargetValidated, 
+    targetAddress, 
+    isTargetValidated, 
+    oracle,
+    setOracle,
+    jobId,
+    setJobId,
+    setTxnStatus, 
+    setTempData, 
+    tempData } = useAppContext();
 
-  const retrieveKYC = async (targetAddress) => {
+  const retrieveKYC = async (oracle, jobId, targetAddress) => {
     if (account && isValidNetwork) {
       try {
         setTxnStatus('LOADING');
         setHasTargetValidated("retrieving");
-        const txn = await kycValidatorContract.retrieveKYC(targetAddress, {
+        const txn = await kycValidatorContract.retrieveKYC(oracle, jobId, targetAddress, {
           from: validator
         });
         console.log(txn);
@@ -80,6 +90,10 @@ export const useKYCValidator = () => {
     targetAddress,
     tempData,
     setTargetAddress,
-    isTargetValidated
+    isTargetValidated,
+    oracle,
+    setOracle,
+    jobId,
+    setJobId
   };
 };

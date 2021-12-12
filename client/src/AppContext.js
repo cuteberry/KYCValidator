@@ -3,6 +3,10 @@ import React, { createContext, useReducer } from 'react';
 const initialContext = {
   targetAddress: '',
   setTargetAddress: () => {},
+  oracle: '',
+  setOracle: () => {},
+  jobId: '',
+  setJobId: () => {},
   hasTargetValidated: '',
   setHasTargetValidated: () => {},
   tempData: '',
@@ -19,7 +23,16 @@ const appReducer = (state, { type, payload }) => {
         ...state,
         targetAddress: payload,
       };
-
+    case 'SET_ORACLE':
+      return {
+        ...state,
+        oracle: payload,
+      };
+    case 'SET_JOBID':
+      return {
+        ...state,
+        jobId: payload,
+      };
     case 'SET_IS_TARGET_VALIDATED':
       return {
         ...state,
@@ -55,6 +68,14 @@ export const AppContextProvider = ({ children }) => {
     targetAddress: store.targetAddress,
     setTargetAddress: (targetAddress) => {
       dispatch({ type: 'SET_TARGET_ADDRESS', payload: targetAddress });
+    },
+    oracle: store.oracle,
+    setOracle: (oracle) => {
+      dispatch({ type: 'SET_ORACLE', payload: oracle });
+    },
+    jobId: store.jobId,
+    setJobId: (jobId) => {
+      dispatch({ type: 'SET_JOBID', payload: jobId });
     },
     hasTargetValidated: store.hasTargetValidated,
     setHasTargetValidated: (hasTargetValidated) => {

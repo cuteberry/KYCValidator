@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import Text from '../../components/Text';
 import AddressInput from '../../components/AddressInput';
+import JobIdInput from '../../components/JobIdInput';
+import OracleInput from '../../components/OracleInput';
 import Card from '../../components/Card';
 import Button from 'react-bootstrap/Button';
 import { colors } from '../../theme';
@@ -27,6 +29,10 @@ const CompInteractionCard = () => {
   const [depositAmount, setDepositAmount] = useState(0);
   const { targetAddress,
     setTargetAddress,
+    oracle,
+    setOracle,
+    jobId,
+    setJobId,
     retrieveKYC,
     hasKYC, 
     tempData,
@@ -34,7 +40,7 @@ const CompInteractionCard = () => {
    } = useKYCValidator();
   // const { ethBalance } = useEth();
   const { txnStatus, setTxnStatus } = useTransaction();
-  const handleRetrieveKYC = () => retrieveKYC(targetAddress);
+  const handleRetrieveKYC = () => retrieveKYC(oracle, jobId, targetAddress);
   const handleHasKYC = () => hasKYC(targetAddress);
   const handleTempData = () => getTemp();
   
@@ -77,7 +83,9 @@ const CompInteractionCard = () => {
         <Text block t2 color={colors.green} className="mb-3">
           KYC Validator
         </Text>
-        <AddressInput value={targetAddress} setValue={setTargetAddress} />
+        <OracleInput  setValue={setOracle}/>
+        <JobIdInput  setValue={setJobId}/>
+        <AddressInput  setValue={setTargetAddress}/>
         <Button variant="outline-dark" disabled={targetAddress == ''} className="mt-3" onClick={handleHasKYC}>
           isKYC
         </Button>
