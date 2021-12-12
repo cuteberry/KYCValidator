@@ -57,15 +57,16 @@ yarn start
 - Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
 - JobId: 7401f318127148a894c00c292e486ffd
 - targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
-- Use this link to fund deployed contract address with LINK and ETH on Kovan
-https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752
+- Make sure there is enough ETH and LINK in the contract 
+    - Use [this link](https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752) to fund deployed contract address with LINK and ETH on Kovan
+    - Check smart contract account balance [here](https://kovan.etherscan.io/address/0x5d97A2DD17517379010b6f7FaC1aE7B5c963F91d)
 - During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
 
 ## Author's public ethereum account
 Mei Lazell
 0x520A74215410c7832911bb0c7b86c6c353BBd08C
 
-## [Screen cast of final project](https://drive.google.com/file/d/116_89AJQnns5Jth5AYIigYG79U8ycLLA/view?usp=sharing)
+## [Screen cast of this project](https://drive.google.com/file/d/1Ybf1BwYI7m-k5CzN9RK9Y5R8k3TLhcuU/view?usp=sharing)
 
 ## Public Deployed Frontend Site Using Netlify
 [https://musing-leavitt-df2f94.netlify.app/](https://musing-leavitt-df2f94.netlify.app/)
