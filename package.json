@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "dependencies": {
+    "@chainlink/contracts": "^0.1.9",
     "@openzeppelin/contracts": "^4.4.0",
     "@truffle/hdwallet-provider": "^1.7.0",
     "husky": "^7.0.4",

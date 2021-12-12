@@ -2,7 +2,7 @@
 pragma solidity ^0.8.7;
 
 //yarn add @chainlink/contracts
-import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
+import "@chainlink/contracts/src/v0.8/dev/ChainlinkClient.sol";
 
 /**
  * Request testnet LINK and ETH here: https://faucets.chain.link/
