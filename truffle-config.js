@@ -21,7 +21,7 @@
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 //
 // const fs = require('fs');
-const mnemonic = "net initial metal pair tool amused absorb capable theory canvas action twin";
+const mnemonic = "test";
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const path = require("path");

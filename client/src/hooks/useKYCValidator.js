@@ -11,7 +11,7 @@ export const useKYCValidator = () => {
   const { account } = useWeb3React();
   const { isValidNetwork } = useIsValidNetwork();
   const validator = account;
-  const kycValidatorContractAddress = '0x26658F2DBfD5295Cf76E8a80bf82A33c61e0Ed05'; // ropsten
+  const kycValidatorContractAddress = '0x9afBB0de076895917C21318307AD8B1084d77914'; // ropsten
   const kycValidatorContract = useContract(kycValidatorContractAddress, KYC_VALIDATOR_ABI.abi);
   const { setTargetAddress, setHasTargetValidated, targetAddress, isTargetValidated, setTxnStatus, setTempData, tempData } = useAppContext();
 

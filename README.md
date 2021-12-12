@@ -3,17 +3,17 @@
 ## Table of Contents
 
 # Verify an account's KYC status
-Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
-The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
+- Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
+- The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
 
-## Use case s
-1. We can retrived user's KYC data off chain and store it in the smart contract. We can periodically refresh this data. 
-2. Other smart contract can call this contract to check the user's current KYC status. 
+## Use cases
+-  We can retrived user's KYC data off chain and store it in the smart contract. We can periodically refresh this data. 
+-  Other smart contract can call this contract to check the user's current KYC status. 
 
 ## Mechanics
-Truffle - used to build and deploy the smart contract
-web3-React - used to conect smart contract with React UI. 
-Chainlink - used to call off chain API 
+-  Truffle - used to build and deploy the smart contract. 
+-  web3-React - used to conect smart contract with React UI.  
+-  Chainlink - used to call off chain API. 
 
 ## Test
 run `truffle test` with ganche-cli on port 8545
@@ -36,22 +36,29 @@ KYCValidator
 |── migrations
 |── test
 ```
-## Install dependencies
-`npm install`
 
 ## Deployment
-yarn 
+```
+npm install 
 npm install @chainlink/contracts
 truffle compile
 truffle deploy --reset  --network kovan
+```
+
+## Testing
+```
+cd client
+yarn
+yarn start
+```
 
 ## Testing guidance
-Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
-JobId: 7401f318127148a894c00c292e486ffd
-targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
-Use this link to fund deployed contract address with LINK and ETH on Kovan
+- Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
+- JobId: 7401f318127148a894c00c292e486ffd
+- targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
+- Use this link to fund deployed contract address with LINK and ETH on Kovan
 https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752
-During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
+- During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
 
 ## Author's public ethereum account
 Mei Lazell
