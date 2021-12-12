@@ -84,6 +84,16 @@ module.exports = {
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
+    kovan: {
+      provider: () => new HDWalletProvider(mnemonic, "https://kovan.infura.io/v3/56c5c5f093bb40d58bed579c05709955"),
+      //from: "0x520A74215410c7832911bb0c7b86c6c353BBd08C",
+      network_id: 42,       // kovan's id
+      gas: 5500000,        // Ropsten has a lower block limit than mainnet,
+      gasPrice: 25000000000,
+      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+      //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
@@ -100,7 +110,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.6",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.7",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {

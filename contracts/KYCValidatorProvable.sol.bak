@@ -5,7 +5,7 @@ pragma solidity >0.6.1 <0.9.0;
 
 import "./imported/provableAPI.sol"; 
 
-contract KYCValidatorWithAPICall is usingProvable {
+contract KYCValidatorProvable is usingProvable {
     uint constant public gasLimit = 187123;
     uint256 public priceOfUrl;
     string public temp;

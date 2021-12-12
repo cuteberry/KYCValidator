@@ -1,9 +1,6 @@
-var KYCValidatorWithAPICall = artifacts.require("./KYCValidatorWithAPICall.sol");
+var KYCValidatorChainlink = artifacts.require("./KYCValidatorChainlink.sol");
 
 module.exports = function(deployer, network, accounts) {
     //dev
-    deployer.deploy(KYCValidatorWithAPICall,{ from: accounts[0], value: "4000001234" });
-
-    //production
-    //deployer.deploy(KYCValidatorWithAPICall);
+    deployer.deploy(KYCValidatorChainlink,{ from: accounts[0], value: "4000001234" });
 };

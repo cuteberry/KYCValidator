@@ -1,23 +1,26 @@
-# blockchain-developer-bootcamp-final-project
+# KYC Validaor Project
 
 ## Table of Contents
 
-# Crypto Fund Withholding
-The current nature of Crypto transation has been non-revertable. It's a challenge for use cases that need the fund to be withhold for a period of time before release it to the other party or have the ability to cancel the transaction if certain conditiaons don't meet. 
+# Verify an account's KYC status
+Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
+The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
 
-## Use case 
-1. Withhold: this is used to hold certain amount of money so that some transaction can be executed later. 
+## Use case s
+1. We can retrived user's KYC data off chain and store it in the smart contract. We can periodically refresh this data. 
+2. Other smart contract can call this contract to check the user's current KYC status. 
 
-2. For merchandise purchase, we can hold the fund before the buyer recieves the merchandise. This protected the seller for the risk of not getting the payment and the buyer for not recieve the goods. 
-
-3. For donation management, we can hold the fund in the contract. The distribution of fund to recievers will be managed by the contractor. 
+## Mechanics
+Truffle - used to build and deploy the smart contract
+web3-React - used to conect smart contract with React UI. 
+Chainlink - used to call off chain API 
 
 ## Test
 run `truffle test` with ganche-cli on port 8545
 
 ## Folder structure
 ```
-BLOCKCHAIN-DEVELOPER-BOOTCAMP-FINAL-PROJECT
+KYCValidator
 |── client
 |    └── public
 |    └── src
@@ -35,6 +38,18 @@ BLOCKCHAIN-DEVELOPER-BOOTCAMP-FINAL-PROJECT
 ```
 ## Install dependencies
 `npm install`
+
+## Deployment
+npm install @chainlink/contracts
+truffle compile
+truffle deploy --reset  --network kovan
+
+## Testing guidance
+Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
+JobId: 7401f318127148a894c00c292e486ffd
+targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
+Use this link to fund deployed contract address with LINK and ETH on Kovan
+https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752
 
 ## Author's public ethereum account
 Mei Lazell
