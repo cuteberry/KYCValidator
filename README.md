@@ -51,6 +51,7 @@ JobId: 7401f318127148a894c00c292e486ffd
 targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
 Use this link to fund deployed contract address with LINK and ETH on Kovan
 https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752
+During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
 
 ## Author's public ethereum account
 Mei Lazell
