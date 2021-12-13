@@ -50,15 +50,16 @@ yarn start
 ```
 
 ## Testing Instructions
-- Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
-- JobId: 7401f318127148a894c00c292e486ffd
-- targetAddress: https://github.com/cuteberry/demo/blob/master/db.json
+- Chainlink 
+    - Oracle: 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8
+    - JobId: 7401f318127148a894c00c292e486ffd
 - Make sure there is enough ETH and LINK in the contract 
     - Use [this link](https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752) to fund deployed contract address with LINK and ETH on Kovan
     - Check smart contract account balance [here](https://kovan.etherscan.io/address/0x5d97A2DD17517379010b6f7FaC1aE7B5c963F91d)
 - During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
-- Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
-- The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
+- Sample KYC data 
+    - hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
+    - The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
 
 ## Author's public ethereum account
 Mei Lazell
