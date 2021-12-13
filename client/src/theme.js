@@ -2,11 +2,12 @@ export const colors = {
   purple: '#bf00ff',
   brown: '#c9b18aff',
   red: '#c9b18aff',
-  lightBlue: '#347e8aff',
+  lightBlue: '#BB2528',
   darkBlue: '#29576eff',
   gray: '#5b778fff',
   lightGray: '#F3F5F7',
   green: '#7DDE92',
+  white: '#ffffff',
 };
 
 export const textSizes = {

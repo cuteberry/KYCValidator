@@ -25,7 +25,7 @@ const BalanceCard = () => {
 
   return (
     <Card style={{ maxWidth: 500}}>
-      <Text block color={colors.darkRed}>
+      <Text block color={colors.white}>
         System
       </Text>
       <Text block color={colors.green}>
@@ -38,7 +38,7 @@ const BalanceCard = () => {
         JobId: <Text block color={colors.brown}>{jobId}</Text>
       </Text>
       <br/>
-      <Text block color={colors.darkRed}>
+      <Text block color={colors.white}>
         User
       </Text>
       <Text block color={colors.green}>

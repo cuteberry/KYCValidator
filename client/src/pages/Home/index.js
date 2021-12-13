@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import CompInteractionCard from './CompInteractionCard';
+import BalancesCard from '../../components/BalancesCard';
 import ConnectWalletModal from '../../components/ConnectWalletModal';
 import useWalletConnectionModal from '../../hooks/useWalletConnectionModal';
 

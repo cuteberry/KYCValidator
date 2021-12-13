@@ -2,10 +2,6 @@
 
 ## Table of Contents
 
-# Verify an account's KYC status
-- Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
-- The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
-
 ## Use cases
 -  We can retrived user's KYC data off chain and store it in the smart contract. We can periodically refresh this data. 
 -  Other smart contract can call this contract to check the user's current KYC status. 
@@ -61,6 +57,8 @@ yarn start
     - Use [this link](https://faucets.chain.link/kovan?_ga=2.177983335.312954236.1639262171-26356466.1633074752) to fund deployed contract address with LINK and ETH on Kovan
     - Check smart contract account balance [here](https://kovan.etherscan.io/address/0x5d97A2DD17517379010b6f7FaC1aE7B5c963F91d)
 - During MetaMask testing: make sure increase the Max Fee for the transation to allow it to pass through fast. 
+- Sample KYC data is hosted at this link https://my-json-server.typicode.com/cuteberry/demo/{address}
+- The editable version is at https://github.com/cuteberry/demo/blob/master/db.json. 
 
 ## Author's public ethereum account
 Mei Lazell
