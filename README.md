@@ -66,7 +66,7 @@ Mei Lazell
 0x520A74215410c7832911bb0c7b86c6c353BBd08C
 
 ## Screen cast of this project
-- [Link to video](https://drive.google.com/file/d/1Gjxhv4XTgvhYbQsmzXrWgQdgqWGOau73/view?usp=sharing)
+- [Link to video](https://drive.google.com/file/d/1skP8iRMwBcWiZR2WWEGLVoIXagBTJl3R/view?usp=sharing)
 
 
 
