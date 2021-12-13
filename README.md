@@ -68,9 +68,6 @@ Mei Lazell
 ## Screen cast of this project
 - [Link to video](https://drive.google.com/file/d/1Ybf1BwYI7m-k5CzN9RK9Y5R8k3TLhcuU/view?usp=sharing)
 
-## Public Deployed Frontend Site Using Netlify
-[https://musing-leavitt-df2f94.netlify.app/](https://musing-leavitt-df2f94.netlify.app/)
-
 
 
 
