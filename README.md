@@ -1,4 +1,4 @@
-# KYC Validaor Project
+# KYC Validator Project
 
 ## Table of Contents
 
@@ -10,7 +10,7 @@
 -  Truffle - used to build and deploy the smart contract. 
 -  web3-React - used to conect smart contract with React UI.  
 -  Chainlink - used to call off chain API. 
--  Infuar - used to deploy ontract on chain 
+-  Infura - used to deploy ontract on chain 
 
 ## Folder structure
 ```
